@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Editable Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Editable Resume</h1>
+        <form id="resumeForm">
+            <h2>Personal Information</h2>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+
+            <h2>Education</h2>
+            <input type="text" id="education" placeholder="Education" required>
+
+            <h2>Work Experience</h2>
+            <input type="text" id="workExperience" placeholder="Work Experience" required>
+
+            <h2>Skills</h2>
+            <input type="text" id="skills" placeholder="Skills (comma separated)" required>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <div id="resume" class="resume"></div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
